@@ -20,5 +20,6 @@ func TestRouter(t *testing.T) {
 	router.ServeHTTP(recorder, request)
 	response := recorder.Result()
 	body, _ := io.ReadAll(response.Body)
+	//tes
 	assert.Equal(t, "hello get", string(body))
 }
